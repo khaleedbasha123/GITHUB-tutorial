@@ -65,3 +65,8 @@ two ways:
     switch to the main branch 
     add new branch to the main branch
     "git merge 'branch name'"
+
+merging two branches before using 'pull' results in merging in our local repo but not in remote repository.
+because we have to pull all the data from the newest branch from the remote repository into our loacl repository.
+since we pull we would have all the commits so we could add.
+without pulling from the remote repository we are only merging in our loacl repository.
