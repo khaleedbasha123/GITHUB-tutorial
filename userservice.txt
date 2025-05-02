@@ -42,3 +42,7 @@ to see if how many branches are there:
 
 we can also see that the change we are making in the new branch has no effect to the main branch.
 "git switch 'branch name'" or "git checkout 'branch name'"
+
+Now lets create another branch.
+remember when we create a branch using "checkout" command we use "git checkout -b 'branch name'"
+and when using "switch" command we use "git switch -c 'branch name'"
