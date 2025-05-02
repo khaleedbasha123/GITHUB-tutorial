@@ -32,7 +32,7 @@ so when we push the change to the github it wont allow because only those allowe
 
 BRANCHING:
 we create a seperate branch to experiment. so instead if we want to update/change a feature in the main branch itself and if it contains 
-bugs it will be a problem thats why we create a branch and experiment with this and is we succeed we then 
+bugs it will be a problem thats why we create a branch and experiment.
 
 HOW TO CREATE A NEW BRANCH:
 "git checkout -b feature1" - it will create a new branch. And also we're automatically pointed on the new branch.
@@ -52,3 +52,8 @@ and all the branches; including the remote branches "git branches --all"
 switching between the previous branch "git switch -"
 
 deleting a branch "git branch -d 'branch name'"
+
+PUSHING THE UPDATED FILES INTO THE REMOTE REPOSITORY:
+no need to create a remote repo if already created a loacl repo through the command line.
+so after changing just move the changes files into staging , then commit and then push into the new repo (it will automatically creates
+a remote repo in the GITHUB)
