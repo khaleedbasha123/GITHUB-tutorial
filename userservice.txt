@@ -65,3 +65,37 @@ two ways:
     switch to the main branch 
     add new branch to the main branch
     "git merge 'branch name'"
+
+merging two branches before using 'pull' results in merging in our local repo but not in remote repository.
+because we have to pull all the data from the newest branch from the remote repository into our loacl repository.
+since we pull we would have all the commits so we could add.
+without pulling from the remote repository we are only merging in our loacl repository.
+
+changes in the main branch will automatically changed in the new branch.
+
+2.
+
+You can do:
+git checkout main
+git merge new-branch
+git push origin main
+And it will work — as long as your local main is up to date with the remote origin/main.
+
+But here's the risk if you skip git pull:
+If someone else has pushed new commits to origin/main that your local main doesn’t have, 
+then when you try to push after merging, Git will reject the push:
+
+! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'origin'
+
+Then you'd have to:
+git pull origin main  # Now you might face merge conflicts
+So now you're cleaning up after the merge, which can be messy.
+
+Best Practice (Safe Path):
+git checkout main
+git pull origin main ← get latest changes
+git merge new-branch
+git push origin main
+
+This way, you're guaranteed a clean, conflict-free merge that pushes successfully the first time.
