@@ -55,5 +55,13 @@ deleting a branch "git branch -d 'branch name'"
 
 PUSHING THE UPDATED FILES INTO THE REMOTE REPOSITORY:
 no need to create a remote repo if already created a loacl repo through the command line.
-so after changing just move the changes files into staging , then commit and then push into the new repo (it will automatically creates
-a remote repo in the GITHUB)
+so after changing just move the changes files into staging , then commit and then push the branch into the new repo (it will 
+automatically creates a remote repo in the GITHUB)
+
+MERGING TWO BRANCHES:
+two ways:
+1. simple merge:
+    check the status
+    switch to the main branch 
+    add new branch to the main branch
+    "git merge 'branch name'"
