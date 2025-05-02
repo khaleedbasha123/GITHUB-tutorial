@@ -12,3 +12,14 @@ To check the creator of a particular tag "git show 'tag'"
 WE have to push these tags to the path where the remote repo is separately "git push origin v1.0"
 
 to check where our remote repository is command "git remote -v"
+
+CLONING A PROJECT:
+Goto GITHUB and find a source code of some software.
+since we cannot push any code we use HTTPS.
+Copy the url and go to the system terminal and copy the source code in our machine "git clone url"
+NOW open the vs code folder in vs code.
+so now we want to know some things about it.
+lets check it log history "git --no-pager log"
+now lets check tags "git tags", we can see many versions of vs code.
+we can also check when our version was created "git show 'tag'"
+to view the commits and its message in one line "git log --pretty=oneline"
