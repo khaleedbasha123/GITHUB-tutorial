@@ -46,3 +46,9 @@ we can also see that the change we are making in the new branch has no effect to
 Now lets create another branch.
 remember when we create a branch using "checkout" command we use "git checkout -b 'branch name'"
 and when using "switch" command we use "git switch -c 'branch name'"
+
+to see the present branches we use "git branch"
+and all the branches; including the remote branches "git branches --all"
+switching between the previous branch "git switch -"
+
+deleting a branch "git branch -d 'branch name'"
