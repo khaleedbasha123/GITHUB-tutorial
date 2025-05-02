@@ -23,3 +23,9 @@ lets check it log history "git --no-pager log"
 now lets check tags "git tags", we can see many versions of vs code.
 we can also check when our version was created "git show 'tag'"
 to view the commits and its message in one line "git log --pretty=oneline"
+
+CHANGING/UPDATING SOMTHING ON THE CLONED SOURCE CODE:
+we take some file from the souce code and change but it's in the working directory only.
+we ensure the partciular file is on our path and then add the file to the staging area "git add 'path'" and then we commit.
+But its still in our loacl machine because we didnt push it yet to the origin or remote repository.
+so when we push the change to the github it wont allow because only those allowed are the contributors.
