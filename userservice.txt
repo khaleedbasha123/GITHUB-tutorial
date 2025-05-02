@@ -1,3 +1,14 @@
 get the user data
 
 process the data
+
+to create a tag for details and name a verssion for each update we make "git tag -a v1.0 -m "first tag created""
+we created a tag. so from the next tage we create "git tag v1.1 -m "second tag created""
+
+To check the tags created "git tag"
+
+To check the creator of a particular tag "git show 'tag'"
+
+WE have to push these tags to the path where the remote repo is separately "git push origin v1.0"
+
+to check where our remote repository is command "git remote -v"
