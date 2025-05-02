@@ -37,5 +37,8 @@ bugs it will be a problem thats why we create a branch and experiment with this 
 HOW TO CREATE A NEW BRANCH:
 "git checkout -b feature1" - it will create a new branch. And also we're automatically pointed on the new branch.
 
-to see if how mnay branches are there:
+to see if how many branches are there:
 "git branch"
+
+we can also see that the change we are making in the new branch has no effect to the main branch.
+"git switch 'branch name'" or "git checkout 'branch name'"
